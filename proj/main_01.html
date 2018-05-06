@@ -118,17 +118,21 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
 
 
 
-</script><tw-passagedata pid="1" name="Question1" tags="question" position="413,140" size="100,100">So... not a great night out there for the team after your 7th loss in a row. What do you think went wrong again tonight?
 
-[[Well, I mean, they scored more than we did. That&#39;s about it.|Answer1,1]]
-[[We showed grit and determination, and put pucks in deep. And ya know what, that&#39;s what it takes to win.|Answer1,2]]
-[[Why you have to be mad??|Answer1,3]]
+
+</script><tw-passagedata pid="1" name="Question1" tags="question" position="412,140" size="100,100">So... not a great night out there after your 7th loss in a row. What do you think went wrong again tonight?
+
+[[1) Well, I mean, they scored more than we did. That&#39;s about it.|Answer1,1]]
+[[2) We showed grit and determination, and put pucks in deep. And ya know what, that&#39;s what it takes to win.|Answer1,2]]
+[[3) Why you have to be mad??|Answer1,3]]
 
 &lt;&lt;set $media_score to 10&gt;&gt;
 &lt;&lt;set $coach_score to 10&gt;&gt;
@@ -138,7 +142,7 @@ Debug:
 Media: $media_score
 Coach: $coach_score
 Fan: $fan_score
-&lt;&lt;if $media_score is 50&gt;&gt;Media is still 50&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Answer1,1" tags="" position="235,346" size="100,100">They scored more than we did. That&#39;s about it.
+&lt;&lt;if $media_score is 50&gt;&gt;Media is still 50&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Answer1,1" tags="" position="235,318" size="100,100">They scored more than we did. That&#39;s about it.
 
 The interviewer stares blankly into the distance, yawning. 
 
@@ -150,11 +154,10 @@ The interviewer stares blankly into the distance, yawning.
 &lt;&lt;set $coach_score +=1&gt;&gt;
 &lt;&lt;set $fan_score -=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="Answer1,2" tags="" position="404,345" size="100,100">
+</tw-passagedata><tw-passagedata pid="3" name="Answer1,2" tags="" position="406,319" size="100,100">
 
 
-&quot;We showed grit and determination, and 
-put pucks in deep&quot;, you state unemotionally. 
+&quot;...and put pucks in deep&quot;, you state unemotionally. 
 
 &quot;And ya know what, that&#39;s what it takes to win.&quot;
 
@@ -182,7 +185,7 @@ Media: $media_score
 Coach: $coach_score
 Fan: $fan_score
 
-</tw-passagedata><tw-passagedata pid="4" name="Answer1,3" tags="" position="570,346" size="100,100">&quot;Why you have to be mad?&quot; you exclaim to the press.
+</tw-passagedata><tw-passagedata pid="4" name="Answer1,3" tags="" position="570,322" size="100,100">&quot;Why you have to be mad?&quot; you exclaim to the press.
 
 &quot;Is only a game?!&quot;
 
@@ -197,9 +200,7 @@ Everybody in the room goes quiet.
 Debug:
 Media: $media_score
 Coach: $coach_score
-Fan: $fan_score</tw-passagedata><tw-passagedata pid="5" name="Welcome" tags="" position="413,21" size="100,100">&quot;Welcome to the show, kid.&quot;
-
-&quot;Got time for an interview?&quot;
+Fan: $fan_score</tw-passagedata><tw-passagedata pid="5" name="Welcome" tags="" position="413,21" size="100,100">&quot;Welcome to the show, kid. Got time for an interview?&quot;
 
 [[Huh, I mean yeah, sure.|Question1]]
 
